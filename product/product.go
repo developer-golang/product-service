@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"net/http"
 )
-
+//
 func CreateProduct(w http.ResponseWriter, r *http.Request) {
 	var Odata []models.ProductDetails
 	err := json.NewDecoder(r.Body).Decode(&Odata)
