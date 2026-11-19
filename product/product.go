@@ -25,7 +25,6 @@ func CreateProduct(w http.ResponseWriter, r *http.Request) {
 }
 
 func GetProductDetails(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("GetProductDetails called")
 	var products []models.ProductDetails
 
 	result := database.Db.Find(&products)
